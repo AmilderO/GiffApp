@@ -1,0 +1,6 @@
+<div class = "search">
+    <h4>Ingrese el GIF que desea buscar</h4>
+    <button (click)="search(gif.value)"> Buscar </button>
+    <input type="text" placeholder="Encontrar GIF" #gif (keyup.enter)="search(gif.value)" #textbox1 required>
+
+</div>

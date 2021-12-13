@@ -1,0 +1,21 @@
+<div class = "globals">
+    
+    
+    <div class = "tabla">
+        <table class = "table table-hover table-bordered table-sm">
+            <thead>
+                <tr>
+                    <th scope="col"><div class = "historial"><h4>-- Historial de Búsqueda --</h4></div></th>
+                </tr>
+            </thead>
+                <tr *ngFor="let palabra of historial">
+                    <th scope="row"> {{ palabra }} </th>
+                </tr>
+        </table>
+    </div>
+
+    <div class = "botonlimpiar">
+        <button (click)="clear()"> Limpiar </button>
+    </div>
+</div>
+

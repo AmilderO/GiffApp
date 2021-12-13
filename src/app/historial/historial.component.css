@@ -1,0 +1,17 @@
+
+
+.historial {
+    max-width: 600px;
+    text-align: center;
+    margin:  10px auto;
+}
+
+.table {
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.botonlimpiar {
+    text-align: center;
+}
