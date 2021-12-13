@@ -15,7 +15,7 @@ export class DataService {
   constructor ( private http: HttpClient ) {  }
 
   getTrendingGifs(){
-    return this.http.get(`https://api.giphy.com/v1/gifs/search?api_key=${ environment.giphyAPI_key }&q=&limit=24&offset=0&rating=g&lang=en`)
+    return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=MRPvMqUcmsILNyyU1pleJj9IHaN3r0TM&limit=25&rating=g`)
     .subscribe(
       (response: any) => {
         this.gifs.next(response.data);
@@ -25,7 +25,7 @@ export class DataService {
 
   searchGifs(palabra: String){
     this.historial.push(palabra);
-    return this.http.get(`https://api.giphy.com/v1/gifs/search?q=${ palabra }&api_key=${ environment.giphyAPI_key }&q=&limit=25&offset=0&rating=g&lang=en`)
+    return this.http.get(`https://api.giphy.com/v1/gifs/search?q=${ palabra }&api_key=MRPvMqUcmsILNyyU1pleJj9IHaN3r0TM&q=&limit=25&offset=0&rating=g&lang=en`)
     .subscribe(
       (response: any) => {
         this.gifs.next(response.data);
