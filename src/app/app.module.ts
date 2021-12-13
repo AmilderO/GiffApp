@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import { GifsComponent } from './gifs/gifs.component';
 import { HistorialComponent } from './historial/historial.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -18,6 +19,7 @@ import { HistorialComponent } from './historial/historial.component';
     SearchComponent,
     GifsComponent,
     HistorialComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
