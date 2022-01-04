@@ -6,10 +6,15 @@ nav {
     font-size: 10px;
     margin: 10px;
     font-family: serif;
+    text-transform: capitalize;
 }
 
 .acerca_de {
     font-size: 10px;
+}
+
+p {
+    font-size: bold;
 }
 
 .acerca_de.title {
